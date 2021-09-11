@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="" id="nombre" autofocus>  <br> <br>caja para meter texto     <!-- el autofocus es para que le haga focus a un elemento recien se cargue la pagina -->
+       
+        <!--input para el uso de las contraseñas -->
+        <label for="pass">Contraseña</label>
+        <input type="password" name="" id="pass"> <br><br>
+       
+        <!-- input tipo correo electronico -->
+        <label for="email">Correo</label>
+        <input type="email" name="" id="email"> <br> <br>
+        
+        <!-- input tipo url -->
+        <label for="url">Agregar página</label>
+        <input type="url" name="" id="url"> <br> <br>
+
+        <!-- input tipo telefono -->
+        <label for="phone">Telefono</label>
+        <input type="tel" value="" id="phone" placeholder="+52 53036266" maxlength="10"> <br><br>     <!-- maxlength para poner un tope de caracteres -->
+
+        <!-- input tipo numero solo permite el ingreso de numero -->
+        <label for="numero">Numeros</label>
+        <input type="number" name="" id="numero" min="18" max="80"> <br><br>
+ 
+         <!-- input tipo reset,limpia todo el formulario -->
+         <input type="reset" value="resetear">
+
+        <!--input tipo submit que es para enviar el formulario -->
+        <input type="submit" value="enviar"> <br> <br>
+    </form>
+</body>
+</html>
