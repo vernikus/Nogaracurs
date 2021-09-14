@@ -30,9 +30,59 @@
         <!-- input tipo numero solo permite el ingreso de numero -->
         <label for="numero">Numeros</label>
         <input type="number" name="" id="numero" min="18" max="80"> <br><br>
- 
-         <!-- input tipo reset,limpia todo el formulario -->
-         <input type="reset" value="resetear">
+
+        <!-- Los input tipo radio, siempre tienes que llevar un valor el cual tiene que ser lo mismo que salga en el label -->
+        <label for="panes1">pay</label>
+        <input type="radio" name="fav_pan" id="panes1" value="pay"><br><br>
+        
+        <!-- Todas las opciones de radio tiene que llevar el mismo nombre en name="" -->
+        <label for="panes2">Morido</label>
+        <input type="radio" name="fav_pan" id="panes2" value="Morido"><br><br>
+        
+        <label for="panes3">cuerno</label>
+        <input type="radio" name="fav_pan" id="panes3" value="cuerno"><br><br>
+
+        <!-- En el input checkbox se aplican exactamente las mismas reglas que en el radio -->
+        <!-- ES IMPORTANTE QUE SE COLOQUE EL (Value) para la parte de backend -->
+        <label for="perro">Perro</label>
+        <input type="checkbox" name="fav_animal" id="perro" value="perro"><br><br>
+         
+        <label for="Gatos">Gatos</label>
+        <input type="checkbox" name="fav_animal" id="Gatos" value="Gatos"><br><br>
+         
+        <label for="Perico">Perico</label>
+        <input type="checkbox" name="fav_animal" id="Perico" value="Perico"><br><br>
+
+        <!-- El input tipo date se usa para seleccionar tu fecha de nacimiento o chequear un vuelo -->
+        <input type="date" name="" id=""><br><br>
+        <input type="datetime-local" name="" id=""><br><br>
+
+        <!-- Se usa generalmete para mandar archivos -->
+        <input type="file" name="" id=""><br><br>
+
+        <!-- El inmput hidden es un input invisible  -->
+        <input type="hidden" name=""><br><br>
+
+        <!-- Elinput timo image es para crear un boton con una imagen, es practicamente un input tipo submit, solo que en lugar de texto lleva una imagen -->
+        <input type="image" src="http://placeimg.com/200/200/people" alt=""><br><br>
+
+        <!-- Sirve para seleccionar un mes -->
+        <input type="month" name="" id=""><br><br>
+
+        <!-- Sirve para seleccionar una semana entera -->
+        <input type="week" name="" id=""><br><br>
+
+        <!-- Es para seleccionar rangos -->
+        <input type="range" name="" id=""><br><br>
+
+        <!-- input tipo reset,limpia todo el formulario -->
+        <input type="reset" value="resetear"><br><br>
+
+        <!-- Sirve para poner una hora -->
+        <input type="time" name="" id=""><br><br>
+
+        <!-- se usa para hacer in indexer o para biscar algo-->
+        <input type="search" name="" id=""><br><br>
 
         <!--input tipo submit que es para enviar el formulario -->
         <input type="submit" value="enviar"> <br> <br>
