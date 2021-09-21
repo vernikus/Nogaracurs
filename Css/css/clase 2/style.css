@@ -1,0 +1,78 @@
+h1{
+    color: blue;
+    font-family:Helvetica;
+}
+div{
+    height: 50px;
+}
+
+.container1,.container2,.container3{
+    border: royalblue;
+    border-style: solid 3px;
+}
+
+#nombre1{
+    background-color: red;
+}
+
+#nombre2{
+    background-color: blue;
+}
+
+#nombre3{
+    background-color: green;
+}
+        /* RGB va de 0 a 255 */
+#rgb1{
+    background-color: rgb(0, 0, 0);
+}
+
+#rgb2{
+    background-color: rgb(255, 255, 255);
+}
+
+#rgb3{
+    background-color: rgb(255, 0, 0);
+}
+
+#rgb4{
+    background-color:rgb(0,255,0);
+}
+
+#rgb5{
+    background-color: rgb(0, 0, 255);
+}
+
+/* RGBA  se le agraga el canal "Alfa"*/
+#rgba1{
+    background-color: RGBA(0, 0, 0,.50);
+}
+
+#rgba2{
+    background-color: RGBA(255, 255, 255,.50);
+}
+
+#rgba3{
+    background-color: RGBA(255, 0, 0,.50);
+}
+
+#rgba4{
+    background-color:RGBA(0,255,0,.50);
+}
+
+#rgba5{
+    background-color: RGBA(0, 0, 255,.50);
+}
+
+/* Texto */
+.parrafo1{
+    font-family: Helvetica,Arial,sans-serif;
+    /* Dependiento de la tipografia se le puede dar distintos "Grosores" */
+    font-weight: lighter;
+    /* Se le pueden dar diferentes estilos (normal,oblicuo,italica) */
+    font-style:none;
+    /* Se le pone una sangria */
+    text-indent: 50px;
+    /* Sirve para poner una sombra */
+    text-shadow: 2px 2px 2px rgb(0, 0, 255);
+}
