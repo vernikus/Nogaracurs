@@ -1,0 +1,34 @@
+body{
+    background-color:cornflowerblue;
+}
+h1{
+    text-align: center;
+}
+
+div{
+    /* El margen se sobrepone es decir que los margenes no se suman,   haber 20px de margen de todos los lados no se suma el de uno con el otro no da 40px de espacio el margin-bottm con el margin-top,si no que solo dan 20*/
+    margin: 20px;
+    /* 
+    El primero es para el eje y (Arriba y abajo) el segundo es para el eje x (izquierda y derecha)
+    margin:20px 10px;
+    */
+}
+
+.div1{
+    background-color:green;
+    width: 100px;
+    height: 100px;
+}
+.div2{
+    background-color:black;
+    width: 100px;
+    height: 100px;
+}
+.div3{
+    background-color:palevioletred;
+    width: 100px;
+    height: 100px;
+    /* Bordes */
+    border: 1px solid black ;
+    border-radius: 50%;
+}

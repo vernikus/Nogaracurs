@@ -1,0 +1,34 @@
+body{
+    background-color:cornflowerblue;
+}
+.p1{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    /* Es para la separacion que se tiene entre lienas (Generalmente el line-heigth es igual a el tamaño de la fuente) */
+    line-height: 24px;
+    /* Es para dar una separacion entre las palabras */
+   word-spacing: 18px;
+}
+
+.lista{
+    /* Cambia el adorno de cada li */
+    /* "none" pues es para que no tenga ninguna decoracion :v */
+    list-style: none;
+    /*Tiene practicamente solo dos usos insite y outside  */
+    list-style-position: outside;
+    background-color: lawngreen;
+}
+
+.lista li{
+    font-family: Helvetica,Arial,sans-serif;
+    font-size: 24px;
+    color: white;
+}
+
+.lista2{
+    /* Cambia el adorno de la lista por una imagen */
+    list-style-image: url(logoj-ConvertImage.ico);
+    
+}
