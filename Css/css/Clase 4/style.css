@@ -1,0 +1,58 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica,Arial,sans-serif;
+}
+body{
+    background-color: plum;
+}
+
+.nav{
+    background-color: blueviolet;
+}
+.lista{
+    list-style-position: inside;
+    list-style-type: none;
+    text-align: center;
+}
+/* Se le quita el adorno de la lista */
+.lista li{
+    color: whitesmoke;
+    background-color: teal;
+    /* El uso del inline-block hace que un elemento de bloque se pocisione como un elemento en linea */
+    display: inline-block;
+    padding: 15px 20px;
+    margin: 10px;
+    border-radius:5px ;
+}
+
+
+
+/* Borde de la tabla 
+    Collapse quita los espacion en blanco que hay entre celdas
+*/
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+/* Borde de las celdas */
+td{
+    border: 1px solid black;
+    
+}
+
+
+.contenedor{
+    background-color: tomato;
+    border: 1px solid black;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* Para centrar elementos que no sean TEXTO se pone un display:block; y margenes automaticos el lado izquiero y derecho */
+.contenedor img{
+    width: 50%;
+    display: block;
+    margin: 0px auto 0px auto;
+}

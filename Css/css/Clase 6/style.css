@@ -1,0 +1,59 @@
+/* *{
+    margin: 0px;
+    top: 0px;
+} */
+body{
+    background-color:blueviolet;
+   
+}
+
+
+/* Se usa para selecionar el primer hijo */
+ul li:first-child{
+    color:white;
+    text-decoration: none;   
+}
+
+/* Se usa para selecionar el ultimo hijo */
+ul li:last-child{
+    color: tomato;
+    font-size: 30px;
+}
+
+section{
+    background-color: thistle;
+    height: 200px;
+}
+
+section p{
+    padding: 10px;
+}
+
+/* Cambia las propiedades de toda la primer linea en la página, el tamaño de la primer linea dependera del tamaño de pantalla */
+section p::first-line{
+    color: violet;
+    font-size: 20px;
+}
+
+/* Cambia las propiedades de la primer letra del texto */
+section p::first-letter{
+    font-family: Helvetica;
+    color: black;
+    font-size: 25px;
+}
+
+/* Cambia las propiedades al momento de seleccionar texto de toda la página  */
+::selection{
+    background-color: black;
+    color: white;
+}
+
+/*Se colocan elemnetos despues del contenido que no son seleccionables  */
+section p::after{
+    content: url(../logoj-ConvertImage.ico);
+}
+
+/* Se colocan alementos antes del contenido que no es seleccionable */
+section p::before{
+    content: url(../logoj-ConvertImage.ico);
+}

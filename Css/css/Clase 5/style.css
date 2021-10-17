@@ -1,0 +1,63 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family: Helvetica;
+}
+body{
+    background-color: rosybrown;
+}
+
+.container_relative{
+    /* El relative es para los contenedores de los elementos absolute */
+    /* Es decir que cuando el contenedor tenga position relative y sus hijos position absoule, los hijos se moveran en torno al tañano del padre */
+    position: relative;
+    width: 500px;
+    height: 200px;
+    background-color: brown;
+}
+.position_absolute{
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    
+    
+    /* Con position absolute - Tiene una posiscion absoluta referente a toda la ventada o documento (Se le pueden dar los valores de top,right,bottom,left)   */
+    /* Tambien tiene la propiedad el z-index ESTA PROPIEDAD ES SOLAMENTE PARA POSITION RELATIVE */
+    position: absolute;
+    top:50px;
+    right: 20px;
+    z-index: 10;
+}
+
+div{
+    padding: 10px;
+    background-color: aqua;
+    color: black;
+    
+    position: absolute;
+    top:40px;
+    right: 20px;
+
+}
+
+
+nav{
+    background-color: coral;
+    padding: 10px;
+
+}
+
+li{
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+    font-weight: bolder;
+}
+
+a:hover{
+    background-color: blueviolet;
+}
