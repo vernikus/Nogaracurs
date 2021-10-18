@@ -8,7 +8,7 @@
 /* Barra de navegacion */
 nav{
     background-color: rgba(34, 34, 34, 0.80);
-    position: sticky;
+    position: relative;
     top: 10px;
     z-index: 20;
     margin-left: 10%;
@@ -47,7 +47,6 @@ header{
     height: 120vh;
     position: relative;
     text-align: center;
-    z-index: 0;
     
 }
 
@@ -74,52 +73,57 @@ header > div > h1 > span{
 }
 
 
+/* Section Services */
 
-main > .asd{
+
+main > section.container_services,main > section.container_portafolio{
+    margin:-100px 78px 0 0;
     position: relative;
-    margin-right:78px ;
-    z-index: 0;
+    /*background: -webkit-linear-gradient(left, #e8432a 0%, #e8432a 100%), -webkit-linear-gradient(left, #e8432a 0%, #e8432a 100%);*/
+    background: linear-gradient(225deg, transparent 71px, rgba(232,67,42,1) 0);
+    padding-bottom: 200px;
+    
 }
 
-main > .asd::before{
+main > section.container_services::before{
     content: "";
     position: absolute;
     top: 0;
     right: 0;
     border-top: 100px solid transparent; 
     border-left: 100px solid #f27d68;
-    /* z-index: 40; */
+
 
 }
 
-main > div>  section.container_services{
-
-    margin-top: -100px;
-    background-color: rgba(232,67,42,1);
-    position: relative;
-   
+main >section.container_services::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 100px;
+    border-top: 100px solid rgba(0, 0, 0, .15);
+    border-left: 100px solid transparent;
 }
 
-
-main > div >  section.container_services> h2{
+main > section.container_services> h2, main > section.container_portafolio > h3{
     font-size: 48px;
     font-weight: lighter;
     margin-left: 78px;
     padding: 50px 0;
 }
-main > div > section.container_services > h2 > span {
+main > section.container_services > h2 > span, main > section.container_portafolio > h3 > span {
     font-weight: 600;
     
 }
 
-main > div > section.container_services > div{
+main > section.container_services > div{
     margin-left: 78px;
     display: flex;
     flex-wrap: wrap;
 
 }
 
-main > div > section.container_services > div > div{
+main > section.container_services > div > div{
     background-color: rgb(217,57,33);
     padding: 20px;
     margin: 0 9px 30px;
@@ -129,7 +133,7 @@ main > div > section.container_services > div > div{
     position: relative;
 }
 
-main > div > section.container_services > div > div::before{
+main > section.container_services > div > div::before{
     content:"";
     position:absolute;
     bottom: 0;
@@ -138,7 +142,7 @@ main > div > section.container_services > div > div::before{
     border-left: 20px solid  rgba(232,67,42,1);
 }
 
-main > div > section.container_services > div > div::after{
+main > section.container_services > div > div::after{
     content:"";
     position:absolute;
     bottom: 0;
@@ -148,24 +152,74 @@ main > div > section.container_services > div > div::after{
 }
 
 
-main > div > section.container_services > div > div:hover{
+main > section.container_services > div > div:hover{
     background-color: rgb(53,54,44);
 }
 
 
-main > div > section.container_services > div > div > i{
+main > section.container_services > div > div > i{
     font-size: 3em;
     line-height: 100px;
     display: block;
 }
-main > div > section.container_services > div > div> span{
+main > section.container_services > div > div> span{
     font-size: 18px;
     font-weight: 600;
     padding: 20px;
 }
 
-main > div > section.container_services > div > div > p{
+main > section.container_services > div > div > p{
     font-size: 16px;
     font-weight: lighter;
     margin-top: 20px;
+} 
+
+/* Section Portafolio */
+
+main > section.container_portafolio{
+    margin:-100px 0 0 78px;
+    background: linear-gradient(135deg, transparent 71px, rgba(128,181,54,1) 0);
+}
+
+main > section.container_portafolio::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 100px solid transparent;
+    border-right: 100px solid  rgb(159, 204, 92) ;
+}
+
+main > section.container_portafolio::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100px;
+    border-top: 100px solid rgba(0, 0, 0, .15);
+    border-right: 100px solid transparent;
+}
+
+main > section.container_portafolio > h3{
+    text-align: end;
+    margin-right: 78px;
+
+}
+
+main > section.container_portafolio > div {
+    display: flex;
+    margin: 50px 0 0 20px;
+    position: relative  ;
+
+}
+
+main >section.container_portafolio > div > div{
+    width: 228px;
+}
+
+main > section.container_portafolio > div > div > img {
+    width: 100%;
+}
+
+main > section.container_portafolio > div > div:nth-child(even){
+    margin-top: 45px;
 } 
