@@ -254,7 +254,7 @@ for(let index = 0 ; index < tiktokers.length ; index++){
     `;
     container.appendChild(element);
     container.children[contador].children[0].children[2].style.backgroundImage  =`url(../media/cards/${tiktokers[index].img})`;
-    console.log(container.children[contador].children[0].children[2])
+    //console.log(container.children[contador].children[0].children[2])
     for(let index2 = 0;index2 < tiktokers[index].stars;index2++){
         var img = document.createElement('img')
         img.src="../media/star.png";
