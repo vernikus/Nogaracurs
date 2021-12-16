@@ -5,18 +5,19 @@ let container = document.createElement('ul');
 next.innerHTML = 'next'
 main.appendChild(next)
 
-const getData =(url) =>{
-     fetch(url)
-    .then(response => response.json())
-    .then(data =>{
-        // console.log(data)
-        preView(data),
-        nextView(data.info)
-    })
-} 
+const getData = (url) => {
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            //console.log(data)
+           print(data),
+            nextView(data.info)
+            //console.log(data.info)
+        })
+}
 
-const preView =(info)=>{
-    for(let index =0; index < info.results.length;index++){
+const print = (info) => {
+    for (let index = 0; index < info.results.length; index++) {
         let li = document.createElement('li')
         li.innerHTML = `
         <img src = "${info.results[index].image}">
@@ -27,21 +28,12 @@ const preView =(info)=>{
 
     }
 }
-const nextView = (dataNext) =>{
-    getData(dataNext.next)
-    console.log(dataNext.next)
-
-    next.addEventListener('click', () =>{
-        for (let index = 0; index < container.children.length; index ++){
-            console.log(container.children[index])
-            container.children[index].children[1].innerHTML = 'adasdasdad'
-         
-         
-            // for(let index2 = 0 ; index2 < data.results.length; index2++){
-            //     container.children[index].children[1].innerHTML = data.results[index2].name;
-            //     container.children[index].children[0].innerHTML = data.results[index2].image;
-            // }
-        }
+const nextView = (dataNext) => {
+    
+    next.addEventListener('click',() => {
+        getData(dataNext.next)
+        console.log(dataNext)
+        
     })
 }
 getData(url)
